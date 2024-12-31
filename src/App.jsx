@@ -116,6 +116,9 @@ function App() {
     setGameStage(stages[0].name);
   };
 
+  useEffect(() => {
+    retry();
+  }, []);
   return (
     <div className="App">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
