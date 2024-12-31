@@ -1,5 +1,5 @@
 {
-  "homepage": "https://samucarafi.github.io/secretWord/",
+  "homepage": "https://samucarafi.github.io/secretWord",
   "name": "secretword",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy": "gr-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",

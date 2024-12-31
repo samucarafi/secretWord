@@ -12,15 +12,15 @@ const Game = ({
   score,
 }) => {
   const [letter, setLetter] = useState("");
-  const letterInputRef = useRef(null)
-  const handleSubmit =(e)=>{
-    e.preventDefault()
-    verifyLetter(letter)
+  const letterInputRef = useRef(null);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    verifyLetter(letter);
     //apagar letra do input
-    setLetter('')
+    setLetter("");
     //voltar foco para input
-    letterInputRef.current.focus()
-  }
+    letterInputRef.current.focus();
+  };
   return (
     <div className="Game">
       <p className="points">
